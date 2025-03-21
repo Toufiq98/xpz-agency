@@ -3,7 +3,8 @@
 }
 
 .container{
-    background-image: url(asset/interior2.png);
+    background-image: url(asset/interior2.png), linear-gradient( #FF4694 0%,#776FFF 80%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+   
 }
