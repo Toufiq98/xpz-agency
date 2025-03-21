@@ -1,0 +1,9 @@
+.navbar-end >  a{
+    background-color: rgb(22, 109, 203);
+}
+
+.container{
+    background-image: url(asset/interior2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
