@@ -3,10 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Products</title>
+    <style>
+        .navbar-end >  a{
+         background-color: rgb(22, 109, 203);
+         color: white;
+}    
+    </style>
 </head>
 <body>
-    <h1>Products</h1>
+    <header class="open-sans">
+        <div class="mx-80">
+            <div class="navbar">
+                <div class="navbar-start"><img class="w-10" src="asset/logo 1.png" alt=""></div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal p-4 font-semibold text-lg">
+                    <li><a id="about-button">About</a></li>
+                    <li><a id="service-button">Services</a></li>
+                    <li><a id="product-button">Products</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="rounded-2xl btn text-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Category section-->
+        <section class="mx-">
+            <div class="flex justify-between mt-10 mb-4 mx-70">
+                <h1 class="text-4xl font-bold">Discover Our Product Categories</h1>
+                <div class="flex gap-1 mt-1">
+                    <p class="mt-2 text-gray-500">View all products</p>
+                    <img class="w-6 mt-1 " src="https://img.icons8.com/?size=100&id=99982&format=png&color=000000" alt="">
+                </div>
+            </div>
+            <div class="flex justify-between mx-40 gap-6 ">
+                <div class="">
+                    <img src="asset/interior10.png" alt="">
+                    <p class="font-bold mt-3">Exclusive Brands</p>
+                    <p class="text-sm text-gray-500 mt-1">Explore our curated selection of premium <br>brands.</p>
+                </div>
+                <div class="">
+                    <img src="asset/interior10.png" alt="">
+                    <p class="font-bold mt-3">New Arrivals</p>
+                    <p class="text-sm text-gray-500 mt-1">Stay ahead with our latest product<br>offerings.</p>
+                </div>
+                <div>
+                    <img src="asset/interior10.png" alt="">
+                    <p class="font-bold mt-3">Sustainable Choices</p>
+                    <p class="text-sm text-gray-500 mt-1">Products designed with the future in mind.</p>
+                </div>
+                <div>
+                    <img src="asset/interior10.png" alt="">
+                    <p class="font-bold mt-3">Tech Innovations</p>
+                    <p class="text-sm text-gray-500 mt-1">The forefront of technology and innovation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="script/product.js"></script>
 </body>
 </html>
