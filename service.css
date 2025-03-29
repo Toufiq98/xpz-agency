@@ -2,6 +2,6 @@
     background-color: rgb(22, 109, 203);
 }
 .heros{
-    background-image: url(asset/interior2.png);
+    background-image: linear-gradient(to bottom, rgba(0, 38, 100, 0.6), rgba(0, 38, 100, 0.5)),url(asset/interior2.png);
     background-size: cover;
 }
