@@ -13,171 +13,204 @@
     
 </head>
 <body>
-    <header class="open-sans">
-        <div class="mx-80 ">
-            <div class="navbar">
-                <div class="navbar-start"><img class="w-10" src="asset/logo 1.png" alt=""></div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal p-4 font-semibold text-lg">
-                    <li><a>About</a></li>
-                    <li><a id="service-button" >Services</a></li>
-                    <li><a id="product-button">Products</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a id="contact-button" class="rounded-2xl btn text-white">Contact Us</a>
-                </div>
-            </div>
+  <header class="open-sans">
+    <div class="  mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="navbar">
+          <div class="navbar-start"><img class="w-10" src="asset/logo 1.png" alt=""></div>
+           <!-- Mobile menu button -->
+    <div class="navbar-center flex lg:hidden">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
         </div>
-    </header>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>About</a></li>
+          <li><a id="service-button">Services</a></li>
+          <li><a id="product-button">Products</a></li>
+        </ul>
+      </div>
+    </div>
+          <!--Desktop-->
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal p-4 font-semibold text-lg">
+              <li><a>About</a></li>
+              <li><a id="service-button" >Services</a></li>
+              <li><a id="product-button">Products</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a id="contact-button" class="rounded-2xl btn text-white">Contact Us</a>
+          </div>
+      </div>
+</header>
     <main>
       <!--hero section-->
       <div class="hero opacity-95"> 
             <div class="background-image ">
-              <h1 class="mb-5 text-6xl font-bold my-20">Welcome to <br> XPJ Trading Agency</h1>
-              <p class="mb-5">
+              <div class="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24 text-center">
+                <h1 class="mb-5 text-4xl sm:text-5xl lg:text-6xl  font-bold my-20">Welcome to <br> XPJ Trading Agency</h1>
+                <p class="mb-5 text-lg sm:text-xl">
                 Empowering Businsess,Enabling Growth
-              </p>
+                </p>
+              </div>
            </div> 
       </div>
       <!--banner-->
-      <section  class="mx-80 flex gap-6  ">
-        <div>
-          <div class="mt-12">
-            <p class="text-blue-600 text-lg">Our Commitment</p>
-            <p class="text-xl font-bold mt-2">Empowering Global Trade</p><p></p>
-            <p class="mt-2">At TradeSphere Agency, we are dedicated to enhancing the world of trade by providing unparalleled services and opportunities. Our mission is to bridge gaps and foster growth across industries.</p>
+      <section  class="mx-auto px-4 sm:px-6 lg:px-20 py-8 flex flex-col lg:flex-row gap-6">
+        <div class="lg:w-1/2">
+          <div class="mt-6 lg:mt-12">
+            <p class="text-blue-600 text-base sm:text-lg">Our Commitment</p>
+            <p class="text-lg sm:text-xl font-bold mt-2">Empowering Global Trade</p>
+            <p class="mt-2 text-sm sm:text-base">At TradeSphere Agency, we are dedicated to enhancing the world of trade by providing unparalleled services and opportunities. Our mission is to bridge gaps and foster growth across industries.</p>
           </div>
-          <div class="">
-            <div class="flex gap-4 mt-6">
-              <div class=""><img class="w-5 " src="asset/Container.png" alt=""></div>
+          <div class="mt-4 sm:mt-6">
+            <div class="flex gap-4 mt-4 sm:mt-6">
+              <div class=""><img class="w-4 sm:w-5 " src="asset/Container.png" alt=""></div>
               <div >
-                <h3 class="font-semibold">Global Reach</h3>
-                <p>Connecting businesses across continents with ease and efficiency</p>
+                <h3 class="font-semibold text-sm sm:text-base">Global Reach</h3>
+                <p class="text-xs sm:text-sm">Connecting businesses across continents with ease and efficiency</p>
               </div>
             </div>
-            <div class="flex gap-4 my-6">
-              <div ><img class="w-5" src="asset/Container-1.png" alt=""></div>
+            <div class="flex gap-4 my-4 sm:my-6">
+              <div ><img class="w-4 sm:w-5" src="asset/Container-1.png" alt=""></div>
               <div>
-                <h3 class="font-semibold">Expert Solutions</h3>
-                <p>Tailored strategies that meet the unique needs of our clients.</p>
+                <h3 class="font-semibold text-sm sm:text-base">Expert Solutions</h3>
+                <p class="text-xs sm:text-sm">Tailored strategies that meet the unique needs of our clients.</p>
               </div>
             </div>
-            <div class="flex gap-4 mb-6">
-              <div><img class="w-5" src="asset/Container-2.png" alt=""></div>
+            <div class="flex gap-4 mb-4 sm:mb-6">
+              <div><img class="w-4 sm:w-5" src="asset/Container-2.png" alt=""></div>
               <div>
-                <h3 class="font-semibold">Trusted Partnerships</h3>
-                <p>Building lasting relationships grounded in trust and mutual success.</p>
+                <h3 class="font-semibold text-sm sm:text-base">Trusted Partnerships</h3>
+                <p class="text-xs sm:text-sm">Building lasting relationships grounded in trust and mutual success.</p>
               </div>
             </div>
           </div>
         </div>
-        <div>
-          <p class="text-lg font-semibold mt-64 ">XPJ Trading Agency has revolutionized our
-            approach to global trade. Their expertise and
+        <div class="lg:w-1/2 lg:pl-8">
+          <p class=" text-base sm:text-lg font-semibold mt-8 sm:mt-12 lg:mt-32 p-4">XPJ Trading Agency has revolutionized our
+            approach to global trade. <br> Their expertise and
             dedication are unmatched.</p>
         </div>
       </section>
       <!--leader section-->
-      <section class="mx-80 ">
-        <div class="text-center mt-12 h-full p-4">
-          <h2 class="text-3xl font-bold mb-6">Meet Our Visionary Leaders</h2>
-          <p class="mb-6">Our leadership team is composed of innovative thinkers and experienced professionals committed to driving <br> success <br>and fostering innovation.</p>
+      <section class="mx-auto px-4 sm:px-6 lg:px-20 ">
+        <div class="text-center mt-8 sm:mt-12  p-4">
+          <h2 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Meet Our Visionary Leaders</h2>
+          <p class="mb-4 sm:mb-6 text-sm sm:text-base">Our leadership team is composed of innovative thinkers and experienced professionals committed to driving <br> success <br>and fostering innovation.</p>
         </div>
-        <div class="grid grid-cols-3  mt-4 mb-24">
-          <div class="">
-            <img class="w-6 m-auto" src="asset/Container-3.png" alt="">
-            <h3 class="font-bold text-center">Innovative</h3>
-            <p class="text-center">Pioneering new ideas that transform global trade.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-4 mb-12 sm:mb-24">
+          <div class="p-4">
+            <img class="w-6 sm:w-8 mb-3 m-auto" src="asset/Container-3.png" alt="">
+            <h3 class="font-bold text-center text-lg sm:text-xl mb-2">Innovative</h3>
+            <p class="text-center text-sm sm:text-base">Pioneering new ideas that transform global trade.</p>
           </div>
-          <div class="">
-            <img class="w-6 m-auto" src="asset/Container-4.png" alt="">
-            <h3 class="font-bold text-center">Experienced</h3>
-            <p class="text-center">Decades of experience in the trade industry.</p>
+          <div class="p-4">
+            <img class="w-6 sm:w-8 mb-3 m-auto" src="asset/Container-4.png" alt="">
+            <h3 class="font-bold text-center text-lg sm:text-xl mb-2">Experienced</h3>
+            <p class="text-center  text-sm sm:text-base">Decades of experience in the trade industry.</p>
           </div>
-          <div class="mt-4">
-            <img class="w-6 m-auto" src="asset/Container-5.png" alt="">
-            <h3 class="font-bold text-center">Collaborative</h3>
-            <p class="text-center">Working together to achieve common goals.</p>
+          <div class="p-4">
+            <img class="w-6 sm:w-8 mb-3 m-auto" src="asset/Container-5.png" alt="">
+            <h3 class="font-bold text-center text-lg sm:text-xl mb-2">Collaborative</h3>
+            <p class="text-center text-sm sm:text-base">Working together to achieve common goals.</p>
           </div>
         </div>
       </section>
       <!--milestone section-->
-      <section class="h-120" style="background-color: #E8F7FF;">
-        <div class="mx-80">
-          <h4 class="text-blue-600 pt-4">OUR JOURNEY</h4>
-          <h2 class="text-3xl font-bold my-4">Milestones of TradeSphere <br> Agency</h2>
-          <p class="mb-8">Explore the significant milestones that have shaped our <br>
+      <section class="py-8 sm:py-16" style="background-color: #E8F7FF;">
+       <div class="mx-auto px-4 sm:px-6 lg:px-20">
+        <div class="text-center sm:text-left">
+          <h4 class="text-blue-600 text-sm sm:text-base pt-4">OUR JOURNEY</h4>
+          <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-4">Milestones of TradeSphere <br> Agency</h2>
+          <p class="mb-6 sm:mb-8 text-sm sm:text-base">Explore the significant milestones that have shaped our <br>
             path and contributed to our success in the global trade <br>
             arena.</p>
         </div>
-        <div class="mx-80  grid grid-cols-3  gap-6">
-          <div class="p-4 bg-white">
+       </div>
+        <div class="mx-auto lg:mx-80  grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div class="p-4 bg-white rounded-lg">
             <h4 class="text-sm">STEP 1</h4>
-            <h3 class="text-xl mt-4">Foundation</h3>
-            <p class="my-2">Established with a vision to innovate global <br>
+            <h3 class="text-lg sm:text-xl mt-2 sm:mt-4">Foundation</h3>
+            <p class="my-1 sm:my-2 ">Established with a vision to innovate global <br>
               trade solutions.</p>
           </div>
-          <div class="p-4 bg-white">
+          <div class="p-4 bg-white rounded-lg">
             <h4 class="text-sm">STEP 2</h4>
-            <h3 class="text-xl mt-4">Expansion</h3>
-            <p class="my-2">Broadened our reach to international markets,
+            <h3 class="text-lg sm:text-xl mt-2 sm:mt-4">Expansion</h3>
+            <p class="my-1 sm:my-2">Broadened our reach to international markets,
               enhancing our service portfolio.</p>
           </div>
-          <div class="p-4 bg-white">
+          <div class="p-4 bg-white rounded-lg">
             <h4 class="text-sm">STEP 3</h4>
             <h3 class="text-xl mt-4">Innovation</h3>
-            <p class="my-2">Launched cutting-edge platforms to streamline trade processes.</p>
+            <p class="my-1 sm:my-2">Launched cutting-edge platforms to streamline trade processes.</p>
           </div>
         </div>
       </section>
       <!--Impact section-->
       <!--commitment-->
-      <section class="mx-80">
-       <div class="mx-auto mt-16 mb-12 ">
-        <p class="text-[#0F58B2] text-center">Sustainability at Our Core</p>
-        <h2 class="mt-8 font-bold text-3xl text-center">XPJ’S Commitment to a Sustainable Future</h2>
-       </div>
-       <hr class="opacity-10 mx-80">
-       <div class="grid grid-cols-3  p-16">
-        <div class="flex gap-4 mx-2 p-4  ">
-          <img class="w-5 h-7 mt-4" src="asset/Container-6.png" alt="">
-          <p class="text-lg">Eco-friendly practices that <br>ensure a greener tomorrow.</p>
+      <section class=" mx-auto px-4 sm:px-6 lg:px-20">
+        <div class="mx-auto mt-8 sm:mt-16 mb-8 sm:mb-12">
+          <p class="text-[#0F58B2] text-center text-sm sm:text-base">Sustainability at Our Core</p>
+          <h2 class="mt-4 sm:mt-8 font-bold text-xl sm:text-2xl lg:text-3xl text-center">XPJ's Commitment to a Sustainable Future</h2>
         </div>
-        <div class="flex gap-4 mx-2 p-4 ">
-          <img class="w-5 h-7 mt-4" src="asset/Container-7.png" alt="">
-          <p class="text-lg">Innovative recycling <br>
-            programs across our operations.</p>
+        
+        <hr class="border-gray-300 opacity-60 mx-4 sm:mx-8 lg:mx-20 my-4 sm:my-6">
+      
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 p-4 sm:p-8 lg:p-16">
+          <div class="flex gap-3 sm:gap-4 p-3 sm:p-4">
+            <img class="w-4 sm:w-5 h-5 sm:h-7 lg:mt-1 sm:mt-4" src="asset/Container-6.png" alt="Eco icon">
+            <p class="lg:text-xl sm:text-sm">Eco-friendly practices that ensure a greener tomorrow.</p>
+          </div>
+          
+          <div class="flex gap-3 sm:gap-4 p-3 sm:p-4">
+            <img class="w-4 sm:w-5 h-5 sm:h-7 lg:mt-1 sm:mt-4" src="asset/Container-7.png" alt="Recycling icon">
+            <p class="lg:text-xl sm:text-sm">Innovative recycling programs across our operations.</p>
+          </div>
+          
+          <div class="flex gap-3 sm:gap-4 p-3 sm:p-4">
+            <img class="w-4 sm:w-5 h-5 sm:h-7 lg:mt-1 sm:mt-4" src="asset/Container-8.png" alt="Energy icon">
+            <p class="lg:text-xl sm:text-sm">Harnessing renewable energy to power our initiatives.</p>
+          </div>
         </div>
-        <div class="flex gap-4 mx-2 p-4 ">
-          <img class="w-5 h-7 mt-4"  src="asset/Container-8.png" alt="">
-          <p>Harnessing renewable <br>
-            energy to power our initiatives.</p>
-        </div>
-       </div>
-
       </section>
     </main>
-    <footer class="h-80"  style="background-color: #E8F7FF;">
-      <div class="p-10">
-        <ul class="flex justify-center gap-8 font-semibold ">
-          <li>About Us</li>
-          <li>Our Services</li>
-          <li>Our Products</li>
-        </ul>
+    <footer class="py-8 sm:py-12"  style="background-color: #E8F7FF;">
+      <div class="mx-auto px-4 sm:px-6">
+        <div class="p-4 sm:p-10">
+          <ul class="flex flex-wrap justify-center gap-4 sm:gap-8 font-semibold text-sm sm:text-base ">
+            <li class="hover:text-blue-600">About Us</li>
+            <li class="hover:text-blue-600" >Our Services</li>
+            <li class="hover:text-blue-600">Our Products</li>
+          </ul>
+        </div>
       </div>
-      <hr class="opacity-10 mx-80">
-      <div class="flex justify-between">
-       <div class="flex  w-8 ml-24 mt-32"> 
-        <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="">
-        <img src="https://img.icons8.com/?size=100&id=01GWmP9aUoPj&format=png&color=000000" alt="">
-        <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="">
-        <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="">
-      </div>
-      <div class="mt-32 mr-12">
-        <p>© XPJ TRADING 2025, Leading the Way in Global Trade Solutions</p>
-      </div>
-      </div>
+      <hr class="border-gray-300 opacity-80 mx-4 sm:mx-8 lg:mx-20 my-4 sm:my-6">
+      <div class="flex flex-col sm:flex-row items-center lg:mx-20 sm:mx-auto justify-between gap-4 sm:gap-0 px-4 sm:px-0">
+        <!-- Social Icons -->
+        <div class="flex gap-4 sm:gap-6 order-2 sm:order-1 mt-4 sm:mt-0">
+          <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+            <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="Facebook" class="w-full h-full">
+          </a>
+          <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+            <img src="https://img.icons8.com/?size=100&id=01GWmP9aUoPj&format=png&color=000000" alt="Twitter" class="w-full h-full">
+          </a>
+          <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+            <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="Instagram" class="w-full h-full">
+          </a>
+          <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+            <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="LinkedIn" class="w-full h-full">
+          </a>
+        </div>
+  
+        <!-- Copyright Text -->
+        <div class="order-1 sm:order-2 text-center sm:text-right text-xs sm:text-sm">
+          <p>© XPJ TRADING 2025, Leading the Way in Global Trade Solutions</p>
+        </div>
+      
     </footer>
     <script src="script/index.js"></script>
 </body>
