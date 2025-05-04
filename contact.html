@@ -9,58 +9,119 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header class="open-sans">
-        <div class="mx-80">
-            <div class="navbar">
-                <div class="navbar-start"><img class="w-10" src="asset/logo 1.png" alt=""></div>
-                <div class="navbar-end hidden lg:flex">
-                  <ul class="menu menu-horizontal p-4 font-semibold text-lg">
-                    <li><a id="about-button">About</a></li>
-                    <li><a id="service-button" >Services</a></li>
-                    <li><a id="product-button">Products</a></li>
-                  </ul>
+  <header class="open-sans">
+    <div class="mx-4 md:mx-8 lg:mx-20 xl:mx-80">
+        <div class="navbar">
+            <div class="navbar-start">
+                <img class="w-8 md:w-10" src="asset/logo 1.png" alt="Company Logo">
+            </div>
+            <div class="navbar-end">
+                <!-- Mobile menu button -->
+                <div class="dropdown lg:hidden">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a id="about-button">About</a></li>
+                        <li><a id="service-button">Services</a></li>
+                        <li><a id="product-button">Products</a></li>
+                    </ul>
                 </div>
-                
+                <!-- Desktop menu -->
+                <div class="hidden lg:flex">
+                    <ul class="menu menu-horizontal p-2 md:p-4 font-semibold text-base md:text-lg">
+                        <li><a id="about-button1">About</a></li>
+                        <li><a id="service-button1">Services</a></li>
+                        <li><a id="product-button1">Products</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
-    <footer class="secondary-bg">
-        <div class="footer-column">
-            <div class="section-titile text-2xl font-bold">Let's Connect</div>
-            <p class="text-lg text-gray-500">Please fill out the form on this section to contact with us.</p>
-        </div>
-        <div class="footer-column">
-            <form action="">
-                <input type="text" name="" id="" placeholder="Your Name" required>
-                <input type="email" name="" id="" placeholder="Your Email" required>
-                <textarea name="" id="" cols="30" rows="30" placeholder="Message"></textarea>
-                <button class="btn btn-info">Submit</button>
-
-            </form>
-        </div>
-
-    </footer>
-    <section class="h-80"  style="background-color: #E8F7FF;">
-        <div class="p-10">
-          <ul class="flex justify-center gap-8 font-semibold ">
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Our Products</li>
-          </ul>
-        </div>
-        <hr class="opacity-10 mx-80">
-        <div class="flex justify-between">
-         <div class="flex  w-8 ml-24 mt-32"> 
-          <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="">
-          <img src="https://img.icons8.com/?size=100&id=01GWmP9aUoPj&format=png&color=000000" alt="">
-          <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="">
-          <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="">
-        </div>
-        <div class="mt-32 mr-12">
-          <p>© XPJ TRADING 2025, Leading the Way in Global Trade Solutions</p>
-        </div>
-        </div>
-      </section>
+    </div>
+</header>
+<section class="h-232 py-8 md:py-12 mt-20 ">
+  <div class="container mx-auto px-4 md:px-8 lg:px-20 xl:px-80">
+      <div class="flex flex-col lg:flex-row gap-8 md:gap-12">
+          <!-- Contact Info Column -->
+          <div class="w-full lg:w-1/2">
+              <h2 class="text-xl md:text-2xl font-bold mb-4">Let's Connect</h2>
+              <p class="text-base md:text-lg text-gray-500">Please fill out the form on this section to contact with us.</p>
+          </div>
+          
+          <!-- Form Column -->
+          <div class="w-full lg:w-1/2">
+              <form action="" class="space-y-4">
+                  <input 
+                      type="text" 
+                      name="name" 
+                      id="name" 
+                      placeholder="Your Name" 
+                      required
+                      class="w-full p-3 md:p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                  <input 
+                      type="email" 
+                      name="email" 
+                      id="email" 
+                      placeholder="Your Email" 
+                      required
+                      class="w-full p-3 md:p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                  <textarea 
+                      name="message" 
+                      id="message" 
+                      placeholder="Message"
+                      rows="6"
+                      class="w-full p-3 md:p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  ></textarea>
+                  <button 
+                      type="submit" 
+                      class="btn btn-info px-6 py-3 md:px-8 md:py-4 text-white bg-blue-600 hover:bg-blue-700 rounded-lg transition duration-300"
+                  >
+                      Submit
+                  </button>
+              </form>
+          </div>
+      </div>
+  </div>
+</section> 
+    <footer class="py-8 sm:py-12" style="background-color: #E8F7FF;">
+      <div class="mx-auto px-4 sm:px-6">
+       <div class="p-4 sm:p-10">
+         <ul class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 font-semibold text-sm md:text-lg text-center">
+           <li>About Us</li>
+           <li>Our Services</li>
+           <li>Our Products</li>
+           <li>Career Opportunities</li>
+         </ul>
+       </div>
+      </div>
+       <hr class="opacity-10 mx-4 md:mx-20 lg:mx-80">
+       <div class="flex flex-col sm:flex-row items-center lg:mx-20 sm:mx-auto     justify-between gap-4 sm:gap-0 px-4 sm:px-0">
+         <!-- Social Icons -->
+         <div class="flex gap-4 sm:gap-6 order-2 sm:order-1 mt-4 sm:mt-0">
+           <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+             <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="Facebook" class="w-full h-full">
+           </a>
+           <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+             <img src="https://img.icons8.com/?size=100&id=01GWmP9aUoPj&format=png&color=000000" alt="Twitter" class="w-full h-full">
+           </a>
+           <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+             <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="Instagram" class="w-full h-full">
+           </a>
+           <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+             <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="LinkedIn" class="w-full h-full">
+           </a>
+         </div>
+   
+         <!-- Copyright Text -->
+         <div class="order-1 sm:order-2 text-center sm:text-right text-xs sm:text-sm">
+           <p>© XPJ TRADING 2025, Leading the Way in Global Trade Solutions</p>
+         </div>
+       </div> 
+     </footer>
       <script src="script/contact.js"></script>
 </body>
 </html>

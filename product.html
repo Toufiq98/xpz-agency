@@ -15,128 +15,164 @@
 </head>
 <body>
     <header class="open-sans">
-        <div class="mx-80">
-            <div class="navbar">
-                <div class="navbar-start"><img class="w-10" src="asset/logo 1.png" alt=""></div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal p-4 font-semibold text-lg">
-                    <li><a id="about-button">About</a></li>
-                    <li><a id="service-button">Services</a></li>
-                    <li><a id="product-button">Products</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a id="contact-button" class="rounded-2xl btn text-white">Contact Us</a>
-                </div>
+        <div class="  mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="navbar">
+              <div class="navbar-start"><img class="w-10" src="asset/logo 1.png" alt=""></div>
+               <!-- Mobile menu button -->
+          <div class="navbar-center flex lg:hidden">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a id="about-button1">About</a></li>
+              <li><a id="service-button">Services</a></li>
+              <li><a id="product-button">Products</a></li>
+            </ul>
+          </div>
+         </div>
+              <!--Desktop-->
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal p-4 font-semibold text-lg">
+                  <li><a id="about-button">About</a></li>
+                  <li><a id="service-button1" >Services</a></li>
+                  <li><a id="product-button">Products</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <a id="contact-button" class="rounded-2xl btn text-white">Contact Us</a>
+              </div>
         </div>
-    </header>
-    <main class="">
-        <!--Category section-->
-        <section class="mx-50">
-            <div class="flex justify-between mt-10 mb-4 mx-50">
-                <h1 class="text-4xl font-bold">Discover Our Product Categories</h1>
-                <div class="flex gap-1 mt-1">
-                    <p class="mt-2 text-gray-500">View all products</p>
-                    <img class="w-6 mt-1 " src="https://img.icons8.com/?size=100&id=99982&format=png&color=000000" alt="">
-                </div>
+      </header>
+      <main>
+        <!-- Category section -->
+        <section class="mx-4 md:mx-8 lg:mx-12 xl:mx-50">
+          <div class="flex flex-col md:flex-row justify-between mt-6 md:mt-10 mb-4">
+            <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Discover Our Product Categories</h1>
+            <div class="flex gap-1 mt-2 md:mt-1 items-center">
+              <p class="text-gray-500 text-sm md:text-base">View all products</p>
+              <img class="w-4 md:w-6" src="https://img.icons8.com/?size=100&id=99982&format=png&color=000000" alt="">
             </div>
-            <div class="flex justify-between mx-40 gap-6 ">
-                <div class="">
-                    <img src="asset/interior10.png" alt="">
-                    <p class="font-bold mt-3">Exclusive Brands</p>
-                    <p class="text-sm text-gray-500 mt-1">Explore our curated selection of premium <br>brands.</p>
-                </div>
-                <div class="">
-                    <img src="asset/interior10.png" alt="">
-                    <p class="font-bold mt-3">New Arrivals</p>
-                    <p class="text-sm text-gray-500 mt-1">Stay ahead with our latest product<br>offerings.</p>
-                </div>
-                <div>
-                    <img src="asset/interior10.png" alt="">
-                    <p class="font-bold mt-3">Sustainable Choices</p>
-                    <p class="text-sm text-gray-500 mt-1">Products designed with the future in mind.</p>
-                </div>
-                <div>
-                    <img src="asset/interior10.png" alt="">
-                    <p class="font-bold mt-3">Tech Innovations</p>
-                    <p class="text-sm text-gray-500 mt-1">The forefront of technology and innovation.</p>
-                </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mx-0 md:mx-4 lg:mx-8 xl:mx-40">
+            <div class="text-center md:text-left">
+              <img class="w-150 h-120 rounded-xl" src="img/syring.jpg" alt="Exclusive Brands">
+              <p class="font-bold mt-2 md:mt-3 text-sm md:text-base">Exclusive Brands</p>
+              <p class="text-xs md:text-sm text-gray-500 mt-1">Explore our curated selection of premium <span class="hidden md:inline"><br></span>brands.</p>
             </div>
+            <div class="text-center md:text-left">
+              <img class="w-150 h-120 rounded-xl" src="img/WhatsApp Image 2025-05-04 at 12.02.52_a1175762.jpg" alt="New Arrivals">
+              <p class="font-bold mt-2 md:mt-3 text-sm md:text-base">New Arrivals</p>
+              <p class="text-xs md:text-sm text-gray-500 mt-1">Stay ahead with our latest product<span class="hidden md:inline"><br></span>offerings.</p>
+            </div>
+            <div class="text-center md:text-left">
+              <img class="w-150 h-120 rounded-xl" src="img/syring.jpg" alt="Sustainable Choices">
+              <p class="font-bold mt-2 md:mt-3 text-sm md:text-base">Sustainable Choices</p>
+              <p class="text-xs md:text-sm text-gray-500 mt-1">Products designed with the future in mind.</p>
+            </div>
+            
+          </div>
         </section>
-        <section class="mx-50 my-15">
-            <div class="flex justify-around">
-                <div>
-                    <h2 class="text-blue-500">Crafted with expertise</h2>
-                    <p class="text-3xl font-bold mt-2">Precision in Private Label <br>
-                        Products</p>
-                    <p class="text-gray-500 mt-2 mb-20">Explore our private label offerings, where quality meets
-                       <br> excellence, tailored to your unique needs.</p>
-
-                    <hr class="opacity-20">   
-                    <div class="my-25 font-semibold">
-                            <li>Unmatched quality and
-                                attention to detail.</li>
-                            <li>Innovative designs that set
-                                trends.</li>
-                    </div>
-                    <button class="btn btn-primary p-5">Discover Our Private Labels=></button>
-                </div>
-                <div>
-                    <img class="" src="asset/interior5.png" alt="">
-                </div>
+      
+        <!-- Private Label Section -->
+        <section class="mx-4 md:mx-8 lg:mx-12 xl:mx-50 my-8 md:my-15">
+          <div class="flex flex-col lg:flex-row justify-around gap-8">
+            <div class="order-2 lg:order-1">
+              <h2 class="text-blue-500 text-sm md:text-base">Crafted with expertise</h2>
+              <p class="text-2xl md:text-3xl font-bold mt-2">Precision in Private Label <span class="hidden md:inline"><br></span>Products</p>
+              <p class="text-gray-500 mt-2 text-sm md:text-base mb-6 md:mb-20">
+                Explore our private label offerings, where quality meets
+                <span class="hidden md:inline"><br></span>
+                excellence, tailored to your unique needs.
+              </p>
+      
+              <hr class="opacity-20">   
+              <div class="my-6 md:my-25 font-semibold text-sm md:text-base">
+                <ul class="list-disc pl-5 space-y-2">
+                  <li>Unmatched quality and attention to detail.</li>
+                  <li>Innovative designs that set trends.</li>
+                </ul>
+              </div>
+              <button class="btn btn-primary py-2 px-4 md:p-5 text-sm md:text-base">Discover Our Private Labels →</button>
             </div>
-        </section>
-        <section class="mx-80 p-5 my-15">
-            <div class="flex justify-around gap-60">
-                <div>
-                    <h3 class="text-3xl font-bold p-2">Our Impact In Numbers</h3>
-                    <p class="text-gray-500 p-2">TradeSphere Agency is dedicated to delivering excellence and <br>
-                        innovation, reflected in our impressive statistics.</p>
-                </div>
-                <div class="grid grid-cols-2 ">
-                    <div class="p-6 border border-gray-300">
-                        <h3 class="text-2xl font-bold">50K+</h3>
-                        <p class="text-blue-600">Satisfied Clients</p>
-                    </div>
-                    <div class="p-6 border border-gray-300">
-                        <h3 class="text-2xl font-bold">90%</h3>
-                        <p class="text-blue-600">Repeat Business Rate</p>
-                    </div>
-                    <div class="p-6 border border-gray-300">
-                        <h3 class="text-2xl font-bold">100K+</h3>
-                        <p class="text-blue-600">Products Sold</p>
-                    </div>
-                    <div class="p-6 border border-gray-300">
-                        <h3 class="text-2xl font-bold">50+</h3>
-                        <p class="text-blue-600">Industry Awards</p>
-                    </div>
-                </div>
+            <div class="order-1 lg:order-2">
+             
             </div>
+          </div>
         </section>
-    </main>
-    <footer class="h-80"  style="background-color: #E8F7FF;">
-        <div class="py-8">
-          <ul class="flex justify-center gap-8 font-semibold text-lg">
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Our Products</li>
-          </ul>
-          <p class="font-semibold text-lg text-center">Career Opportunities</p>
+        <!--Card-->
+        <section class="mx-4 md:mx-8 lg:mx-20 xl:mx-80 p-3 md:p-5 my-8 md:my-15">
+          <img class="mx-auto rounded-xl" src="img/card.jpg" alt="">
+        </section>
+      
+        <!-- Impact Numbers Section -->
+        <section class="mx-4 md:mx-8 lg:mx-20 xl:mx-80 p-3 md:p-5 my-8 md:my-15">
+          <div class="flex flex-col lg:flex-row justify-around gap-8 lg:gap-60">
+            <div class="lg:w-1/2">
+              <h3 class="text-2xl md:text-3xl font-bold p-2">Our Impact In Numbers</h3>
+              <p class="text-gray-500 p-2 text-sm md:text-base">
+                TradeSphere Agency is dedicated to delivering excellence and 
+                <span class="hidden md:inline"><br></span>
+                innovation, reflected in our impressive statistics.
+              </p>
+            </div>
+            <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 md:p-6 border border-gray-300 rounded-lg">
+                <h3 class="text-xl md:text-2xl font-bold">50K+</h3>
+                <p class="text-blue-600 text-sm md:text-base">Satisfied Clients</p>
+              </div>
+              <div class="p-4 md:p-6 border border-gray-300 rounded-lg">
+                <h3 class="text-xl md:text-2xl font-bold">90%</h3>
+                <p class="text-blue-600 text-sm md:text-base">Repeat Business Rate</p>
+              </div>
+              <div class="p-4 md:p-6 border border-gray-300 rounded-lg">
+                <h3 class="text-xl md:text-2xl font-bold">100K+</h3>
+                <p class="text-blue-600 text-sm md:text-base">Products Sold</p>
+              </div>
+              <div class="p-4 md:p-6 border border-gray-300 rounded-lg">
+                <h3 class="text-xl md:text-2xl font-bold">50+</h3>
+                <p class="text-blue-600 text-sm md:text-base">Industry Awards</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    <footer class="py-8 sm:py-12"  style="background-color: #E8F7FF;">
+        <div class="mx-auto px-4 sm:px-6">
+          <div class="p-4 sm:p-10">
+            <ul class="flex flex-col md:flex-row justify-center gap-4 md:gap-8 font-semibold text-sm md:text-lg text-center">
+              <li class="hover:text-blue-600">About Us</li>
+              <li class="hover:text-blue-600" >Our Services</li>
+              <li class="hover:text-blue-600">Our Products</li>
+            </ul>
+          </div>
         </div>
-        <hr class="opacity-10 mx-80">
-        <div class="flex justify-between">
-          <div class="flex  w-8 ml-24 mt-32"> 
-           <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="">
-           <img src="https://img.icons8.com/?size=100&id=01GWmP9aUoPj&format=png&color=000000" alt="">
-           <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="">
-           <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="">
-         </div>
-         <div class="mt-32 mr-12">
-           <p>© XPJ TRADING 2025, Leading the Way in Global Trade Solutions</p>
-         </div>
-         </div>
-    </footer>
+        <hr class="border-gray-300 opacity-80 mx-4 sm:mx-8 lg:mx-20 my-4 sm:my-6">
+        <div class="flex flex-col sm:flex-row items-center lg:mx-20 sm:mx-auto     justify-between gap-4 sm:gap-0 px-4 sm:px-0">
+          <!-- Social Icons -->
+          <div class="flex gap-4 sm:gap-6 order-2 sm:order-1 mt-4 sm:mt-0">
+            <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+              <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="Facebook" class="w-full h-full">
+            </a>
+            <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+              <img src="https://img.icons8.com/?size=100&id=01GWmP9aUoPj&format=png&color=000000" alt="Twitter" class="w-full h-full">
+            </a>
+            <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+              <img src="https://img.icons8.com/?size=100&id=118466&format=png&color=000000" alt="Instagram" class="w-full h-full">
+            </a>
+            <a href="#" class="w-6 h-6 sm:w-8 sm:h-8 hover:opacity-70">
+              <img src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="LinkedIn" class="w-full h-full">
+            </a>
+          </div>
+    
+          <!-- Copyright Text -->
+          <div class="order-1 sm:order-2 text-center sm:text-right text-xs sm:text-sm">
+            <p>© XPJ TRADING 2025, Leading the Way in Global Trade Solutions</p>
+          </div>
+        </div>
+      </footer>
     <script src="script/product.js"></script>
 </body>
 </html>
